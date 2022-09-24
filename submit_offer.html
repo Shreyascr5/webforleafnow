@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+  </head>
+    <title>LEAF NOW Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet" />
+
+  <body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="https://www.bing.com/th?id=AMMS_fd39ac4706d56959a830958f624fadee&w=72&h=72&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.5&pid=16.1">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="loginSQL.html">HOME</a></li>
+                    <li><a href="https://www.compstechnologies.com/support">CONTACT</a></li>
+                    <li><a href="https://www.compstechnologies.com/">ABOUT US </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+
+      <div class="signup-box">
+            <h2 style="text-align:center;">Looking forward to swap your plants ?<br> Enter the details below</h2>
+            <form style="text-align:left;" action="submit_offer.php" method="post">
+              <label>Plant Name</label>
+              <input type="text" placeholder="" name="plantName"/>
+              <label>Scientific Name</label>
+              <input type="text" placeholder="" name="scientificName"/>
+              <div id="more_options" style="display: block;">
+      <b>What is this plant used for?</b><br>
+      <select name="uses" size="1" class="select" onchange="ShowOtherTextBox(uses, 'uses_othertextbox', 'Other');">
+      <option value="">-- Select --</option>
+      <option value="Medicinal">Medicinal</option>
+      <option value="Food">Food</option>
+      <option value="Decorative">Decorative</option>
+      <option value="Other">Other</option>
+      <option value="notsure">I'm not sure</option>
+      </select>
+      <input id="uses_othertextbox" type="text" name="uses_other" value="" maxlength="64" style="display: none;"><br><br>
+
+      <b>What type of plant is this?</b><br>
+      <select name="typeofplant" size="1" class="select" onchange="ShowOtherTextBox(typeofplant, 'type_othertextbox', 'Other');">
+      <option value="">-- Select --</option>
+      <option value="Herb">Herb</option>
+      <option value="Vine">Vine</option>
+      <option value="Tree">Tree</option>
+      <option value="Shrub">Shrub</option>
+      <option value="Cactus">Cactus</option>
+      <option value="Succulent">Succulent</option>
+      <option value="Vegetable">Vegetable</option>
+      <option value="Fruit">Fruit</option>
+      <option value="Carnivorous">Carnivorous</option>
+      <option value="Other">Other</option>
+      <option value="notsure">I'm not sure</option>
+      </select> <input id="type_othertextbox" type="text" name="type_other" value="" maxlength="64" style="display: none;"><br>
+
+      <b>What is the lifespan of this plant?</b>
+      <input type="radio" name="lifespan" value="annual" id="annual"> <label for="annual" title="Germinates from seed, blossoms, produces seed, and dies within one year">Annual</label>
+      <input type="radio" name="lifespan" value="biennial" id="biennial"> <label for="biennial" title="Requiring two years to complete its life cycle">Biennial</label>
+      <input type="radio" name="lifespan" value="perennial" id="perennial"> <label for="perennial" title="Lives for several to many growing seasons">Perennial</label>
+      <input type="radio" name="lifespan" value="notsure" id="notsure_l"> <label for="notsure_l" title="If you're not sure, click here">I'm not sure</label>
+
+
+      <!--<label for="color"><b>Color of flowers, leaves, etc...</b></label><script type="text/javascript">document.write('<span class="help_link" onclick="return !showPopup(\'color_tip\', event);">?<\/span>');</script><span class="help_link" onclick="return !showPopup('color_tip', event);">?</span>
+      <input id="color" type="text" name="color" size="20" value="" maxlength="64">-->
+
+      <label for="location"><b>Where does this plant grow?</b></label>
+      <input id="location" type="text" name="location" value="" size="20" maxlength="64">
+   </div>
+              <!--<input type="text" placeholder="" name="uses"/>
+              <label>Password</label>
+              <input type="password" placeholder="" name="password"/>
+              <label>Confirm Password</label>
+              <input type="password" placeholder="" />
+
+
+              <label for="gold">GOLD MEMBERSHIP</label>
+              <input type="checkbox" name="gold" placeholder="" name="gold" value="g"/>
+
+              <label for="silver">SILVER MEMBERSHIP</label>
+              <input type="checkbox" name="silver" placeholder="" name="silver" value="s"/>
+
+              <label for="gen">GENERAL MEMBERSHIP</label>
+              <input type="checkbox" name="gen" placeholder="" name="general" value="gen"/>
+
+
+              <!--<button>submit</button>-->
+              <input type="submit" name="submit" value="submit">
+            </form>
+
+          </div>
+
+
+
+
+
+
+
+
+         </div>
+      </section>
+      <!--About-->
+
+      <!--photos-->
+
+
+
+
+
+
+<br>
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Compsoft Technologies is an IT Services provider that aims to provide software, designing and marketing solutions to individuals and businesses.
+    </p>
+        <a href="https://www.compstechnologies.com/">FOR MORE DETAILS REGARDING WEBSITE DEV </a>
+
+            <p>MADE WITH  LOVE BY TEAM GAMBIT</p>
+
+    </section>
+
+  </body>
+</html>
