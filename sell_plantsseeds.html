@@ -29,16 +29,16 @@
       <i class="fa fa-times" onclick="hideMenu()"></i>
 
       <div class="signup-box">
-            <h2 style="text-align:center;">Looking forward to swap your plants ?<br> Enter the details below</h2>
+            <h2 style="text-align:center;">Looking forward to SELL your plants ?<br> Enter the details below</h2>
 
-            <form style="text-align:left;" action="submit_offer.php" method="post">
+            <form style="text-align:left;" action="sell_plantsseeds.php" method="post">
               <label>Plant Name</label>
-              <input type="text" placeholder="" name="plantName" required/>
+              <input type="text" placeholder="" name="plantName2" required/>
               <label>Scientific Name(Optional)</label>
-              <input type="text" placeholder="" name="scientificName"/>
+              <input type="text" placeholder="" name="scientificName2"/>
               <div id="more_options" style="display: block;">
       <b>What is this plant used for?</b><br>
-      <select required name="uses" size="1" class="select" onchange="ShowOtherTextBox(uses, 'uses_othertextbox', 'Other');">
+      <select required name="uses2" size="1" class="select" onchange="ShowOtherTextBox(uses, 'uses_othertextbox', 'Other');">
       <option value="">-- Select --</option>
       <option value="Medicinal">Medicinal</option>
       <option value="Food">Food</option>
@@ -49,7 +49,7 @@
       <input id="uses_othertextbox" type="text" name="uses_other" value="" maxlength="64" style="display: none;"><br><br>
 
       <b>What type of plant is this?</b><br>
-      <select required name="typeofplant" size="1" class="select" onchange="ShowOtherTextBox(typeofplant, 'type_othertextbox', 'Other');">
+      <select required name="typeofplant2" size="1" class="select" onchange="ShowOtherTextBox(typeofplant, 'type_othertextbox', 'Other');">
       <option value="">-- Select --</option>
       <option value="Herb">Herb</option>
       <option value="Vine">Vine</option>
@@ -65,17 +65,17 @@
       </select> <input id="type_othertextbox" type="text" name="type_other" value="" maxlength="64" style="display: none;"><br>
 
       <b>What is the lifespan of this plant?</b>
-      <input type="radio" name="lifespan" value="annual" id="annual"> <label for="annual" title="Germinates from seed, blossoms, produces seed, and dies within one year">Annual</label>
-      <input type="radio" name="lifespan" value="biennial" id="biennial"> <label for="biennial" title="Requiring two years to complete its life cycle">Biennial</label>
-      <input type="radio" name="lifespan" value="perennial" id="perennial"> <label for="perennial" title="Lives for several to many growing seasons">Perennial</label>
-      <input type="radio" name="lifespan" value="notsure" id="notsure_l"> <label for="notsure_l" title="If you're not sure, click here">I'm not sure</label>
+      <input type="radio" name="lifespan2" value="annual" id="annual"> <label for="annual" title="Germinates from seed, blossoms, produces seed, and dies within one year">Annual</label>
+      <input type="radio" name="lifespan2" value="biennial" id="biennial"> <label for="biennial" title="Requiring two years to complete its life cycle">Biennial</label>
+      <input type="radio" name="lifespan2" value="perennial" id="perennial"> <label for="perennial" title="Lives for several to many growing seasons">Perennial</label>
+      <input type="radio" name="lifespan2" value="notsure" id="notsure_l"> <label for="notsure_l" title="If you're not sure, click here">I'm not sure</label>
 
 
       <!--<label for="color"><b>Color of flowers, leaves, etc...</b></label><script type="text/javascript">document.write('<span class="help_link" onclick="return !showPopup(\'color_tip\', event);">?<\/span>');</script><span class="help_link" onclick="return !showPopup('color_tip', event);">?</span>
       <input id="color" type="text" name="color" size="20" value="" maxlength="64">-->
 
       <label for="location"><b>Where does this plant grow?</b></label>
-      <input id="location" type="text" name="location" value="" size="20" maxlength="64" required>
+      <input id="location" type="text" name="location2" value="" size="20" maxlength="64" required>
    </div>
               <!--<input type="text" placeholder="" name="uses"/>
               <label>Password</label>
